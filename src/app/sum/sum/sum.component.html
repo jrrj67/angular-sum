@@ -1,0 +1,11 @@
+<form>
+
+  Number 1: <input #number1 type="text" /> <br/>
+
+  Number 2: <input #number2 type="text" /> <br/>
+
+  <input type="button" value="Sum" (click)="sum(number1.value, number2.value)" /><br/><br/>
+
+  Result: <input readonly type="text" [value]="result" />
+
+</form>
